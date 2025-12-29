@@ -300,14 +300,14 @@ StringBackedEnum::hasName('A') // false
 `hasValue()` method permit checking if an enum has a case by passing int, string or enum instance.
 For convenience, there is also a `doesntHaveValue()` method which is the exact reverse of the `hasValue()` method.
 
-```enum-helper/README.md#L123-130
+```php
 PureEnum::hasValue('PENDING') // true
 PureEnum::hasValue('P') // false
 IntBackedEnum::hasValue('ACCEPTED') // false
 IntBackedEnum::hasValue(1) // true
 StringBackedEnum::doesntHaveValue('Z') // true
 StringBackedEnum::hasValue('A') // true
-````
+```
 
 ### Equality
 This helper permits to compare an enum instance (`is()`,`isNot()`) and search if it is present inside an array (`in()`,`notIn()`).
